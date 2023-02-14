@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "discord-summarizer"
+version = "0.1.0"
+description = ""
+authors = []
+readme = "README.md"
+packages = [{ include = "discord_summarizer" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^0.26.5"
+py-cord = "^2.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
