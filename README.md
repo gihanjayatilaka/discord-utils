@@ -15,4 +15,4 @@
 1. Place [OpenAI API key](https://platform.openai.com/account/api-keys) and
    [Discord bot token](https://discord.com/developers/applications) in keys.json (using keys.json.example as a template).
 2. Install dependencies using [Poetry](https://python-poetry.org/docs/): `poetry install`
-3. Run `poetry run python bot/main.py`
+3. Run `poetry run python -m bot.main`

@@ -1,8 +1,9 @@
+import json
+
 import discord
 import openai
 
-from features.summarizer import Summarizer
-import json
+from bot.features.summarizer import Summarizer
 
 keys = json.load(open("./keys.json"))
 openai.api_key = keys['openai']
