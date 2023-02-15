@@ -7,7 +7,7 @@
 3. After creating the application, go to the bot tab, and choose 'Add Bot'
 4. Keep a copy of the shown bot token. (This will go inside `keys.json`)
 5. Ensure the `Message Content Intent` is selected.
-6. Replace `{CLIENT_ID_GOES_HERE}` with the shown application id in the url `https://discord.com/api/oauth2/authorize?permissions=16843776&scope=bot%20applications.commands&client_id={CLIENT_ID_GOES_HERE}`
+6. Replace `{CLIENT_ID_GOES_HERE}` with the shown application id in the url `https://discord.com/api/oauth2/authorize?permissions=16851968&scope=bot%20applications.commands&client_id={CLIENT_ID_GOES_HERE}`
 7. Use the link to invite the bot to a server.
 
 ## Running the bot
