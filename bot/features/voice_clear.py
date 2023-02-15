@@ -35,10 +35,13 @@ class VoiceChannelClear(commands.Cog):
             # ignore muting, deafening, etc
             return
 
-        if not after.channel or (before.channel and before.channel != after.channel and before.channel.id in enabled_channels):
-            # member left the channel or moved to another one
-            messages_to_delete = []
-            async for message in before.channel.history(limit=100):
-                if message.author.id == member.id:
-                    messages_to_delete.append(message)
-            await before.channel.delete_messages(messages_to_delete)
+        if not before.channel or before.channel.id not in enabled_channels:
+            # ignore non-enabled channels
+            return
+
+        # member left the channel or moved to another one
+        messages_to_delete = []
+        async for message in before.channel.history(limit=100):
+            if message.author.id == member.id:
+                messages_to_delete.append(message)
+        await before.channel.delete_messages(messages_to_delete)
